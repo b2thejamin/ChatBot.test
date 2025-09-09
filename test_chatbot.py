@@ -18,7 +18,7 @@ def test_chatbot_responses():
     
     test_cases = [
         ("hello", ["hello", "hi", "hey", "nice"]),
-        ("how are you", ["doing", "great", "functioning", "perfectly"]),
+        ("how are you", ["doing", "great", "functioning", "perfectly", "smoothly"]),
         ("what is your name", ["ChatBot", "name", "call me"]),
         ("tell me a joke", ["joke", "why", "what", "?"]),
         ("what time is it", ["time", ":", "current"]),

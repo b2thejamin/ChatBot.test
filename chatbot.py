@@ -63,6 +63,14 @@ class SimpleChatbot:
                 "What do you call a fake noodle? An impasta!"
             ],
             
+            # Thanks - place before help to catch thanks patterns first
+            r'thank|thanks|appreciate': [
+                "You're welcome! Happy to help!",
+                "No problem at all!",
+                "My pleasure! Anything else I can help with?",
+                "You're very welcome!"
+            ],
+            
             # Help
             r'help|what can you do|capabilities': [
                 "I can chat with you, tell jokes, answer basic questions about time, and have conversations!",
@@ -76,14 +84,6 @@ class SimpleChatbot:
                 "See you later! Have a great day!",
                 "Farewell! Come back anytime for another chat!",
                 "Bye! Thanks for the conversation!"
-            ],
-            
-            # Thanks
-            r'thank you|thanks|appreciate': [
-                "You're welcome! Happy to help!",
-                "No problem at all!",
-                "My pleasure! Anything else I can help with?",
-                "You're very welcome!"
             ]
         }
         
